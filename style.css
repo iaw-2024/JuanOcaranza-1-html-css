@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #9ca3ac;
+    background-color: #0d0c50a8;
+}
+
+nav {
+    background-color: #030303;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.p-with-a {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a {
+    color: #bbc4ce;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f6feb;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    text-shadow: 1px 1px 2px #5b28b9;
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.user-card {
+    padding: 10px;
+    text-align: center;
+    background-color: #0d1117;
+    box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 2%;
+}
+
+.user-card:hover {
+    background-color: #373c44;
+    box-shadow: 5px 5px 12px 1px #000000;
+}
+
+.user-avatar {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.user-form {
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 280px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #8c96a0;
+    background-color: #0d1117;
+}
+
+@media (min-width: 300px) {
+    form {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    form {
+        width: 400px;
+    }
+
+    .user-form{
+        padding: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    form {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1000px) {
+    form {
+        width: 600px;
+    }
+}
+
+@media (min-width: 2000px) {
+    form {
+        width: 1200px;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #b0bdd6;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1f6feb;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2ea043;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #21262d;
+    margin-right: 10px;
+}
+
+#avatar {
+    color: black;
+}
